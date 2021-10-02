@@ -18,6 +18,25 @@
 
            console.log(New.data);
        }
+       async function getDataGlobal(){
+
+        const response=await fetch(api_url);
+        const New=await response.json();
+
+        const{update_date_time,global_total_cases,global_recovered,global_new_deaths,global_new_cases,global_deaths}=New.data
+        
+        document.getElementById('global_total_cases').textContent=global_total_cases;
+        document.getElementById('global_recovered').textContent=global_recovered;
+        document.getElementById('update_date_time').textContent=update_date_time;
+        document.getElementById('global_new_deaths').textContent=global_new_deaths;
+        document.getElementById('global_new_cases').textContent=global_new_cases;
+        document.getElementById('global_deaths').textContent=global_deaths;
+       
+     
+
+        console.log(New.data);
+    }
        getData();
+       getDataGlobal();
        
 
