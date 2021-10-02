@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 
 <head>
-    
+    <link rel="stylesheet" href="style.css">
 
     <script type = "text/javascript" src="Data.js">  </script>
 </head>
 <html>
 <body>
     <div style="width:500px">
-    <h1>Corona Updates</h1>
-    <p>
-       
-        local_deaths:<span id="local_deaths"></span> <br>      
-        local_total_cases:<span id="local_total_cases"></span>  <br>
-        local_recovered:<span id="local_recovered"></span>      <br>
-        local_new_deaths:<span id="local_new_deaths"></span>  <br>
-        local_new_cases:<span id="local_new_cases"></span>      <br>
-        local_active_cases:<span id="local_active_cases"></span>  <br>
-        update_date_time:<span id="update_date_time"></span>   <br>   
+    
+  <center>
+    <h1>Corona Updates-Local</h1>
+    <h4>Local deaths:   <span id="local_deaths" class="text"></span> <br>       </h4>
+    <h4>Local total cases:  <span id="local_total_cases" class="text"></span>  <br></h4>
+    <h4>Local recovered:    <span id="local_recovered" class="text"></span>      <br> </h4>
+    <h4>Local new deaths:   <span id="local_new_deaths" class="text"></span>  <br></h4>
+    <h4>Local new cases:    <span id="local_new_cases" class="text"></span>      <br></h4>
+    <h4>Local active cases: <span id="local_active_cases" class="text"></span>  <br></h4>
+    <h4>Update date time:   <span id="update_date_time" class="text"></span>   <br>  </h4>
 
-    </p>
-    <a href="global.html">Global</a>
-</div>
+  </center>
+    
+  <form action="global.html">
+    <button class="button button1">Global</button>
+    </form>
+    </div>
+  
+    
 
 </body>
 
